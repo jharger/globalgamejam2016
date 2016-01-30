@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using System.Collections.Generic;
 using UnityStandardAssets.CrossPlatformInput;
 
 namespace UnityStandardAssets.Characters.ThirdPerson
@@ -7,13 +8,16 @@ namespace UnityStandardAssets.Characters.ThirdPerson
     [RequireComponent(typeof (ThirdPersonCharacter))]
     public class ThirdPersonUserControl : MonoBehaviour
     {
+
+        public Transform rightHand;
         private ThirdPersonCharacter m_Character; // A reference to the ThirdPersonCharacter on the object
         private Transform m_Cam;                  // A reference to the main camera in the scenes transform
         private Vector3 m_CamForward;             // The current forward direction of the camera
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
+        private bool m_Dive = false;
+        private Animator m_Animator;
 
-        
         private void Start()
         {
             // get the transform of the main camera
@@ -30,6 +34,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
             // get the third person character ( this should never be null due to require component )
             m_Character = GetComponent<ThirdPersonCharacter>();
+            m_Animator = this.GetComponent<Animator>();
         }
 
 
@@ -39,6 +44,26 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
             }
+            if(!m_Dive)
+            {
+                m_Dive = Input.GetButtonDown("HunterDive");
+               
+            }
+        }
+
+        //we have 2 piggyGrabTriggers attached to the hands of our hunter.
+        //if they trigger the piggy, grab it
+        private void OnTriggerEnter(Collider col)
+        {
+            if (col.gameObject.tag == "Piggy" && m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Dive"))
+            {
+                Debug.Log("Grabbed Piggy!");
+                //parent the piggy to our right hand.
+                col.transform.SetParent(rightHand);
+                //start the carry animation
+                m_Animator.SetBool("Carry",true);
+            }
+
         }
 
 
@@ -49,6 +74,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             float h = CrossPlatformInputManager.GetAxis("Horizontal");
             float v = CrossPlatformInputManager.GetAxis("Vertical");
             bool crouch = Input.GetKey(KeyCode.C);
+
+            //dive!
+            if(m_Dive)
+            {
+                m_Animator.SetTrigger("Dive");
+                Debug.Log("Diving for dat piggy");
+            }
 
             // calculate move direction to pass to character
             if (m_Cam != null)
@@ -70,6 +102,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // pass all parameters to the character control script
             m_Character.Move(m_Move, crouch, m_Jump);
             m_Jump = false;
+            m_Dive = false;
         }
     }
 }
