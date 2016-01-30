@@ -9,7 +9,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
     public class ThirdPersonUserControl : MonoBehaviour
     {
 
-        public Transform rightHand;
+        public Transform pigCarryPoint;
         private ThirdPersonCharacter m_Character; // A reference to the ThirdPersonCharacter on the object
         private Transform m_Cam;                  // A reference to the main camera in the scenes transform
         private Vector3 m_CamForward;             // The current forward direction of the camera
@@ -59,7 +59,8 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
                 Debug.Log("Grabbed Piggy!");
                 //parent the piggy to our right hand.
-                col.transform.SetParent(rightHand);
+                col.transform.position = pigCarryPoint.position;
+                col.transform.SetParent(pigCarryPoint);
                 //start the carry animation
                 m_Animator.SetBool("Carry",true);
             }
