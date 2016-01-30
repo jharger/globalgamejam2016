@@ -41,6 +41,16 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
         private void Update()
         {
+            bool wiggleR = Input.GetKeyDown(KeyCode.E); //TODO: add joystick buttons
+            bool wiggleL = Input.GetKeyDown(KeyCode.Q);
+
+            if(wiggleR)
+            {
+                
+               // PigWiggleSlider.instance.AddWiggle(.1f);
+            }
+
+
             if (!m_Jump)
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("Jump");
@@ -48,7 +58,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             if(!m_Dive)
             {
                 m_Dive = Input.GetButtonDown("HunterDive");
-               
+        
             }
         }
 
