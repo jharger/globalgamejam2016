@@ -1,0 +1,13 @@
+Temp/
+Library/
+*.sln
+*.csproj
+*.unityproj
+*.booproj
+*.pidb
+*.resources
+*.suo
+*.swp
+*~
+*.userprefs
+.DS_Store
