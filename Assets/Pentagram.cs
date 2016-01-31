@@ -151,6 +151,8 @@ public class Pentagram : MonoBehaviour {
         audioSource.clip = startClip;
         audioSource.Play();
 
+        GameController.instance.DisplayWin("Goth Wins!");
+        GameController.instance.paused = true;
     }
 
     public void RunAnimation(AnimationFloat anim)

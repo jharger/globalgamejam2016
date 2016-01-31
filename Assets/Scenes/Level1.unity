@@ -424,79 +424,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 63ca12964697f70429a9ff0725a9619c, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &218161548
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
-  m_Component:
-  - 224: {fileID: 218161549}
-  - 222: {fileID: 218161551}
-  - 114: {fileID: 218161550}
-  m_Layer: 5
-  m_Name: Piggy Wins
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &218161549
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 218161548}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 988186668}
-  m_RootOrder: 1
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -616, y: 0}
-  m_SizeDelta: {x: 560, y: 150}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &218161550
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 218161548}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: 8c9c6962bc8cf9f4599e3af7fdc53eec, type: 3}
-    m_FontSize: 70
-    m_FontStyle: 0
-    m_BestFit: 0
-    m_MinSize: 5
-    m_MaxSize: 70
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Piggy Wins!
---- !u!222 &218161551
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 218161548}
 --- !u!1001 &249511310
 Prefab:
   m_ObjectHideFlags: 0
@@ -670,23 +597,23 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22420668, guid: 8517eb89f2f82f2429e261af9f3ce983, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 22420668, guid: 8517eb89f2f82f2429e261af9f3ce983, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22457664, guid: 8517eb89f2f82f2429e261af9f3ce983, type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 22457664, guid: 8517eb89f2f82f2429e261af9f3ce983, type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 22457664, guid: 8517eb89f2f82f2429e261af9f3ce983, type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22452742, guid: 8517eb89f2f82f2429e261af9f3ce983, type: 2}
       propertyPath: m_AnchorMin.y
@@ -759,6 +686,50 @@ Prefab:
     - target: {fileID: 22481148, guid: 8517eb89f2f82f2429e261af9f3ce983, type: 2}
       propertyPath: m_SizeDelta.y
       value: 52
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498856, guid: 8517eb89f2f82f2429e261af9f3ce983, type: 2}
+      propertyPath: timerText
+      value: 
+      objectReference: {fileID: 1226276533}
+    - target: {fileID: 480694, guid: 8517eb89f2f82f2429e261af9f3ce983, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 2.199
+      objectReference: {fileID: 0}
+    - target: {fileID: 11409620, guid: 8517eb89f2f82f2429e261af9f3ce983, type: 2}
+      propertyPath: spinSpeed
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 11441216, guid: 8517eb89f2f82f2429e261af9f3ce983, type: 2}
+      propertyPath: m_MoveSpeedMultiplier
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11441216, guid: 8517eb89f2f82f2429e261af9f3ce983, type: 2}
+      propertyPath: m_AnimSpeedMultiplier
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11492210, guid: 8517eb89f2f82f2429e261af9f3ce983, type: 2}
+      propertyPath: m_pigWigglePower
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498856, guid: 8517eb89f2f82f2429e261af9f3ce983, type: 2}
+      propertyPath: winText
+      value: 
+      objectReference: {fileID: 1407453021}
+    - target: {fileID: 8249906, guid: 8517eb89f2f82f2429e261af9f3ce983, type: 2}
+      propertyPath: m_Volume
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11402688, guid: 8517eb89f2f82f2429e261af9f3ce983, type: 2}
+      propertyPath: m_MoveSpeedMultiplier
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 11498856, guid: 8517eb89f2f82f2429e261af9f3ce983, type: 2}
+      propertyPath: resetText
+      value: 
+      objectReference: {fileID: 1156424805}
+    - target: {fileID: 11498856, guid: 8517eb89f2f82f2429e261af9f3ce983, type: 2}
+      propertyPath: levelName
+      value: Level1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8517eb89f2f82f2429e261af9f3ce983, type: 2}
@@ -2964,8 +2935,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 1407453020}
-  - {fileID: 218161549}
+  - {fileID: 1156424804}
   - {fileID: 393342768}
+  - {fileID: 1226276532}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_AnchorMin: {x: 0, y: 0}
@@ -3090,6 +3062,79 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1059157880}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1156424803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1156424804}
+  - 222: {fileID: 1156424806}
+  - 114: {fileID: 1156424805}
+  m_Layer: 5
+  m_Name: Reset Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1156424804
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1156424803}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 988186668}
+  m_RootOrder: 1
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 39}
+  m_SizeDelta: {x: 445, y: 78}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1156424805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1156424803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8c9c6962bc8cf9f4599e3af7fdc53eec, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 70
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Press Start
+--- !u!222 &1156424806
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1156424803}
 --- !u!1 &1162342666
 GameObject:
   m_ObjectHideFlags: 0
@@ -3411,6 +3456,79 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 403600, guid: f1dc7c7b44427fe4885b369ce6f2521a, type: 2}
   m_PrefabInternal: {fileID: 1215449831}
+--- !u!1 &1226276531
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 224: {fileID: 1226276532}
+  - 222: {fileID: 1226276534}
+  - 114: {fileID: 1226276533}
+  m_Layer: 5
+  m_Name: TimerText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1226276532
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1226276531}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.502957, y: 0.502957, z: 0.502957}
+  m_Children: []
+  m_Father: {fileID: 988186668}
+  m_RootOrder: 3
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -38}
+  m_SizeDelta: {x: 329, y: 148}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1226276533
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1226276531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 8c9c6962bc8cf9f4599e3af7fdc53eec, type: 3}
+    m_FontSize: 100
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 1
+    m_MaxSize: 100
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 66.6
+--- !u!222 &1226276534
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1226276531}
 --- !u!1001 &1271741927
 Prefab:
   m_ObjectHideFlags: 0
@@ -3786,7 +3904,7 @@ GameObject:
   - 222: {fileID: 1407453022}
   - 114: {fileID: 1407453021}
   m_Layer: 5
-  m_Name: GothWins
+  m_Name: WinText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3804,9 +3922,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 988186668}
   m_RootOrder: 0
-  m_AnchorMin: {x: 1, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -616, y: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -6, y: 0}
   m_SizeDelta: {x: 560, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1407453021
@@ -3841,7 +3959,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Goth Wins!
+  m_Text: Piggy Wins!
 --- !u!222 &1407453022
 CanvasRenderer:
   m_ObjectHideFlags: 0
