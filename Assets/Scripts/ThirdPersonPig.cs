@@ -1,7 +1,6 @@
 using UnityEngine;
 
-namespace UnityStandardAssets.Characters.ThirdPerson
-{
+
 	[RequireComponent(typeof(Rigidbody))]
 	[RequireComponent(typeof(CapsuleCollider))]
 	[RequireComponent(typeof(Animator))]
@@ -16,6 +15,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		[SerializeField] float m_AnimSpeedMultiplier = 1f;
 		[SerializeField] float m_GroundCheckDistance = 0.1f;
 
+        public static ThirdPersonPig instance;
 		Rigidbody m_Rigidbody;
 		Animator m_Animator;
 		bool m_IsGrounded;
@@ -30,6 +30,15 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		CapsuleCollider m_Capsule;
 		bool m_Crouching;
 
+        //singleton logic
+        void OnEnable()
+        {
+            instance = this;
+        }
+        void OnDisable()
+        {
+            instance = null;
+        }
 
 		void Start()
 		{
@@ -244,4 +253,4 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			}
 		}
 	}
-}
+

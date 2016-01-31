@@ -61,19 +61,9 @@ public class HunterController : MonoBehaviour {
         //if we are diving, and collided with the piggy
         if (col.gameObject.tag == "Piggy" && m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Dive"))
         {
-            Debug.Log("Grabbed Piggy!");
+            GrabPig(col);
 
-            GameController.instance.SetPigCaptured(true);
-            //parent the piggy to our right hand.
-            pigTransform = col.transform;
-            //make the rigidbody kinematic
-            col.gameObject.GetComponent<Rigidbody>().isKinematic = true;
-            col.isTrigger = true;  // make the collider a trigger
 
-            col.transform.position = pigCarryPoint.position;
-            col.transform.SetParent(pigCarryPoint);
-            //start the carry animation
-            m_Animator.SetBool("Carry", true);
         }
 
         //if we are carrying the pig, and collide witht he Pentagram!
@@ -84,10 +74,33 @@ public class HunterController : MonoBehaviour {
         }
     }
 
+    private void GrabPig(Collider col)
+    {
+        Debug.Log("Grabbed Piggy!");
+
+        GameController.instance.SetPigCaptured(true);
+        //parent the piggy to our right hand.
+        pigTransform = col.transform;
+        //make the rigidbody kinematic
+        col.gameObject.GetComponent<Rigidbody>().isKinematic = true;
+        col.isTrigger = true;  // make the collider a trigger
+
+        col.transform.position = pigCarryPoint.position;
+        col.transform.SetParent(pigCarryPoint);
+        //start the carry animation
+        m_Animator.SetBool("Carry", true);
+
+        //start the wiggle animation
+        ThirdPersonPig.instance.SetWiggle(true);
+
+    }
+
 
     public void ReleasePig()
     {
-        Debug.Log("Sacrifice Accepted!");
+        //end the wiggle animation
+        ThirdPersonPig.instance.SetWiggle(false);
+
         //make the rigidbody non-kinematic
         pigTransform.gameObject.GetComponent<Rigidbody>().isKinematic = false;
         pigTransform.GetComponent<CapsuleCollider>().isTrigger = false;  // turn the collider back on

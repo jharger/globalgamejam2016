@@ -9,7 +9,7 @@ public class MiamiCam : MonoBehaviour {
     public float maxSpeed = 7f;
     public float smoothTime = 1f;
 
-    UnityStandardAssets.Characters.ThirdPerson.ThirdPersonPig pig;
+    ThirdPersonPig pig;
 
     Vector3 targetPos;
     Vector3 vel = Vector3.zero;
@@ -19,7 +19,7 @@ public class MiamiCam : MonoBehaviour {
         targetPos = target.position + Vector3.up * distance;
         transform.position = targetPos;
 
-        pig = target.GetComponent<UnityStandardAssets.Characters.ThirdPerson.ThirdPersonPig>();
+        pig = target.GetComponent<ThirdPersonPig>();
     }
 
     void LateUpdate () {
