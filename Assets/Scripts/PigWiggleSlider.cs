@@ -3,15 +3,16 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class PigWiggleSlider : MonoBehaviour {
-
     public static PigWiggleSlider instance;
     public float lerpSpeed = 1; // how fast does the slider lerp based on inputs
     public UI_Tween tween;
-
+    public UI_Tween helpTween;
+    public Sprite rightHelp;
+    public Sprite leftHelp;
 
     private float CurrentValue;
     Slider slider;
-    
+    Image help;
 
     //singleton logic
     void OnEnable()
@@ -25,6 +26,7 @@ public class PigWiggleSlider : MonoBehaviour {
 
     void Awake()
     {
+        help = helpTween.GetComponent<Image>();
         slider = this.GetComponent<Slider>();
     }
 
@@ -38,6 +40,25 @@ public class PigWiggleSlider : MonoBehaviour {
         tween.Move();
         slider.value = 0f;
         CurrentValue = 0f;
+        StartCoroutine(AnimateHelp());
+    }
+
+    IEnumerator AnimateHelp()
+    {
+        helpTween.Move();
+        for (int i = 0; i < 30; i++)
+        {
+            if(i % 2 == 0)
+            {
+                help.sprite = leftHelp;
+            }
+            else
+            {
+                help.sprite = rightHelp;
+            }
+            yield return new WaitForSeconds(0.1f);
+        }
+        helpTween.MoveBack();
     }
 	// Update is called once per frame
 	void Update () {
