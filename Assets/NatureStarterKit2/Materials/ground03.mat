@@ -1,0 +1,547 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: ground03
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: _BUMPMODE_PARALLAX
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 2800000, guid: 5edd0aaa57578b84da829c036eecf914, type: 3}
+          m_Scale: {x: 30, y: 30}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailNormalMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DecalTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _ParallaxMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _OcclusionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _EmissionMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 30, y: 30}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailMask
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailAlbedoMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MetallicGlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecGlossMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _SpecTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _Ao2Map
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DetailMaterialMap
+        second:
+          m_Texture: {fileID: 2800000, guid: 2b77d5cb601375f4ba50c6194c126e59, type: 3}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _TeamColorMaskMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _IncandescenceMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 30, y: 30}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _RimTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _DissolveTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BlendMap
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MainTex2
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _MaterialMap2
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _BumpMap2
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _EmissionMap2
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: _IncandescenceMap2
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: _SrcBlend
+        second: 1
+      data:
+        first:
+          name: _DstBlend
+        second: 0
+      data:
+        first:
+          name: _Cutoff
+        second: 0.5
+      data:
+        first:
+          name: _Metallic2
+        second: 1
+      data:
+        first:
+          name: _Occlusion
+        second: 1
+      data:
+        first:
+          name: _Parallax
+        second: 0.02
+      data:
+        first:
+          name: _ZWrite
+        second: 1
+      data:
+        first:
+          name: _Glossiness
+        second: 0.056
+      data:
+        first:
+          name: _BumpScale
+        second: 1
+      data:
+        first:
+          name: _OcclusionStrength
+        second: 1
+      data:
+        first:
+          name: _DetailNormalMapScale
+        second: 1
+      data:
+        first:
+          name: _UVSec
+        second: 0
+      data:
+        first:
+          name: _Mode
+        second: 0
+      data:
+        first:
+          name: _Metallic
+        second: 0
+      data:
+        first:
+          name: _Lightmapping
+        second: 1
+      data:
+        first:
+          name: _Emission
+        second: 0
+      data:
+        first:
+          name: _MainTextures
+        second: 0
+      data:
+        first:
+          name: _MainTexUV
+        second: 0
+      data:
+        first:
+          name: _BaseColorVertexTint
+        second: 0
+      data:
+        first:
+          name: _MainPhysicalProperties
+        second: 0
+      data:
+        first:
+          name: _Metal
+        second: 1
+      data:
+        first:
+          name: _Specularity
+        second: 1
+      data:
+        first:
+          name: _Roughness
+        second: 1
+      data:
+        first:
+          name: _ParallaxT
+        second: 0
+      data:
+        first:
+          name: _BumpMode
+        second: 0
+      data:
+        first:
+          name: _MinSamples
+        second: 4
+      data:
+        first:
+          name: _MaxSamples
+        second: 20
+      data:
+        first:
+          name: _AO2
+        second: 0
+      data:
+        first:
+          name: _Ao2MapUV
+        second: 1
+      data:
+        first:
+          name: _Ao2Occlusion
+        second: 1
+      data:
+        first:
+          name: _DetailT
+        second: 0
+      data:
+        first:
+          name: _DetailMode
+        second: 0
+      data:
+        first:
+          name: _DetailAlbedoMapUV
+        second: 0
+      data:
+        first:
+          name: _DetailWeight
+        second: 1
+      data:
+        first:
+          name: _DetailOcclusion
+        second: 1
+      data:
+        first:
+          name: _TeamColor
+        second: 0
+      data:
+        first:
+          name: _TeamColorMasksAsTint
+        second: 0
+      data:
+        first:
+          name: _Decal
+        second: 0
+      data:
+        first:
+          name: _DecalTexUV
+        second: 0
+      data:
+        first:
+          name: _DecalWeight
+        second: 1
+      data:
+        first:
+          name: _DecalSpecularity
+        second: 0.5
+      data:
+        first:
+          name: _DecalAlphaVertexTint
+        second: 0
+      data:
+        first:
+          name: _IncandescenceMapUV
+        second: 0
+      data:
+        first:
+          name: _EmissionWeight
+        second: 0.511
+      data:
+        first:
+          name: _Rim
+        second: 0
+      data:
+        first:
+          name: _RimTexUV
+        second: 0
+      data:
+        first:
+          name: _RimWeight
+        second: 1
+      data:
+        first:
+          name: _RimBias
+        second: 0
+      data:
+        first:
+          name: _RimPower
+        second: 4
+      data:
+        first:
+          name: _Dissolve
+        second: 0
+      data:
+        first:
+          name: _DissolveTexUV
+        second: 0
+      data:
+        first:
+          name: _DissolveCutoff
+        second: 0
+      data:
+        first:
+          name: _DissolveGlowWeight
+        second: 1
+      data:
+        first:
+          name: _DissolveEdgeWidth
+        second: 0.01
+      data:
+        first:
+          name: _BlendProperties
+        second: 0
+      data:
+        first:
+          name: _BlendMapUV
+        second: 0
+      data:
+        first:
+          name: _BlendScale
+        second: 1
+      data:
+        first:
+          name: _BlendCutoff
+        second: 0.25
+      data:
+        first:
+          name: _Blend
+        second: 0.1
+      data:
+        first:
+          name: _BlendAlphaVertexTint
+        second: 0
+      data:
+        first:
+          name: _SecondaryTextures
+        second: 0
+      data:
+        first:
+          name: _MainTex2UV
+        second: 0
+      data:
+        first:
+          name: _BaseColorVertexTint2
+        second: 0
+      data:
+        first:
+          name: _SecondaryPhysicalProperties
+        second: 0
+      data:
+        first:
+          name: _Specularity2
+        second: 1
+      data:
+        first:
+          name: _Roughness2
+        second: 1
+      data:
+        first:
+          name: _Occlusion2
+        second: 1
+      data:
+        first:
+          name: _BumpScale2
+        second: 1
+      data:
+        first:
+          name: _Emission2
+        second: 0
+      data:
+        first:
+          name: _IncandescenceMap2UV
+        second: 0
+      data:
+        first:
+          name: _Emission2Weight
+        second: 1
+    m_Colors:
+      data:
+        first:
+          name: _EmissionColor
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _Color
+        second: {r: 0.8897059, g: 0.76148355, b: 0.56915003, a: 0.309}
+      data:
+        first:
+          name: _SpecColor
+        second: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
+      data:
+        first:
+          name: _MainTexVelocity
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _DetailAlbedoMapVelocity
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _TeamColorMasks
+        second: {r: 1, g: 1, b: 1, a: 0}
+      data:
+        first:
+          name: _TeamColor0
+        second: {r: 1, g: 0, b: 0, a: 1}
+      data:
+        first:
+          name: _TeamColor1
+        second: {r: 0, g: 1, b: 0, a: 1}
+      data:
+        first:
+          name: _TeamColor2
+        second: {r: 0, g: 0, b: 1, a: 1}
+      data:
+        first:
+          name: _TeamColor3
+        second: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      data:
+        first:
+          name: _DecalColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _IncandescenceMapVelocity
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _RimColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _RimTexVelocity
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _DissolveGlowColor
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _Color2
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _MainTex2Velocity
+        second: {r: 0, g: 0, b: 0, a: 0}
+      data:
+        first:
+          name: _Emission2Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: _IncandescenceMap2Velocity
+        second: {r: 0, g: 0, b: 0, a: 0}
