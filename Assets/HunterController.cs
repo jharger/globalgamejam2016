@@ -37,10 +37,10 @@ public class HunterController : MonoBehaviour {
 
     void HandleInput()
     {
-        float trigger = Input.GetAxis("Trigger");
-        Debug.Log(string.Format("Trigger: {0}", Input.GetAxis("Trigger")));
-        bool wiggleR = Input.GetKeyDown(KeyCode.E) || (trigger < -0.5f && !(m_LastTriggerAxis < -0.5f)); 
-        bool wiggleL = Input.GetKeyDown(KeyCode.Q) || (trigger > 0.5f && !(m_LastTriggerAxis > 0.5f));
+        float trigger = Input.GetAxis("HunterWiggle");
+        //Debug.Log(string.Format("Trigger: {0}", Input.GetAxis("HunterWiggle")));
+        bool wiggleR = Input.GetKeyDown(KeyCode.E) || (trigger > 0.5f && !(m_LastTriggerAxis > 0.5f));
+        bool wiggleL = Input.GetKeyDown(KeyCode.Q) || (trigger < -0.5f && !(m_LastTriggerAxis < -0.5f)); 
         m_LastTriggerAxis = trigger;
         if (wiggleR)
         {

@@ -7,12 +7,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
     [RequireComponent(typeof (ThirdPersonPig))]
     public class ThirdPersonPigControl : MonoBehaviour
     {
+        public float m_pigWigglePower;
         private ThirdPersonPig m_Character; // A reference to the ThirdPersonCharacter on the object
-        public Transform m_Cam;                  // A reference to the main camera in the scenes transform
-        private Vector3 m_CamForward;             // The current forward direction of the camera
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
-
+        private float m_LastTriggerAxis;
         
         private void Start()
         {
@@ -38,6 +37,26 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // read inputs
             float h = CrossPlatformInputManager.GetAxis("PigHorizontal");
             float v = CrossPlatformInputManager.GetAxis("PigVertical");
+            float trigger = Input.GetAxis("PigWiggle");
+            //Debug.Log(string.Format("Trigger: {0}", Input.GetAxis("HunterWiggle")));
+            bool wiggleR = (trigger > 0.5f && !(m_LastTriggerAxis > 0.5f));
+            bool wiggleL = (trigger < -0.5f && !(m_LastTriggerAxis < -0.5f));
+            m_LastTriggerAxis = trigger;
+            Debug.Log("PigWiggle: " + trigger);
+
+
+            if (wiggleR)
+            {
+                Debug.Log("WiggleR");
+                PigWiggleSlider.instance.AddWiggle(m_pigWigglePower);
+            }
+            if (wiggleL)
+            {
+                Debug.Log("WiggleL");
+                PigWiggleSlider.instance.AddWiggle(-m_pigWigglePower);
+            }
+
+
             bool crouch = Input.GetKey(KeyCode.C);
 
             // we use world-relative directions in the case of no main camera
