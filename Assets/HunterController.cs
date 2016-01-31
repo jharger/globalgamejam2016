@@ -90,7 +90,7 @@ public class HunterController : MonoBehaviour {
         Debug.Log("Sacrifice Accepted!");
         //make the rigidbody non-kinematic
         pigTransform.gameObject.GetComponent<Rigidbody>().isKinematic = false;
-        pigTransform.GetComponent<BoxCollider>().isTrigger = false;  // turn the collider back on
+        pigTransform.GetComponent<CapsuleCollider>().isTrigger = false;  // turn the collider back on
         //parent the piggy to our right hand.
         pigTransform.SetParent(null);
         //start the carry animation
