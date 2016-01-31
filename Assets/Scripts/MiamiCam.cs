@@ -23,7 +23,7 @@ public class MiamiCam : MonoBehaviour {
     }
 
     void LateUpdate () {
-        targetPos = target.position + target.forward * pig.m_ForwardAmount * leadTime + Vector3.up * distance;
+        targetPos = target.position + target.forward * pig.m_ForwardAmount * pig.m_MoveSpeedMultiplier * leadTime + Vector3.up * distance;
 
         transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref vel, smoothTime, maxSpeed, Time.deltaTime);
     }
