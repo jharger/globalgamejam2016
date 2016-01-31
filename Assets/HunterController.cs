@@ -12,6 +12,7 @@ public class HunterController : MonoBehaviour {
     public float PigGripPower = .1f;
     public Transform pigCarryPoint;
     public float pickupTime;
+    public AudioClip pigSqueal;
     public List<AudioClip> grunts;
     public List<AudioClip> quotes;
 
@@ -123,6 +124,10 @@ public class HunterController : MonoBehaviour {
     private void GrabPig(Collider col)
     {
         Debug.Log("Grabbed Piggy!");
+
+        //play the audio clilp
+        AudioManager.instance.PlayClip(pigSqueal);
+
         pickupTimer = pickupTime; //reset the pickup timer
 
         GameController.instance.SetPigCaptured(true);
