@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using Assets.Scripts;
 
 /// <summary>
 /// For some reason ThirdPersonUserController wasn't seeing any of our custom classes....
@@ -8,11 +7,23 @@ using Assets.Scripts;
 /// </summary>
 public class HunterController : MonoBehaviour {
 
+    public static HunterController instance;
     public float PigGripPower = .1f;
     private Animator m_Animator;
     protected float m_LastTriggerAxis = 0f;
     private Transform pigTransform; // a reference to the pig, after you've grabbed it
     public Transform pigCarryPoint;
+
+
+    //singleton logic
+    void OnEnable()
+    {
+        instance = this;
+    }
+    void OnDisable()
+    {
+        instance = null;
+    }
 
 	// Use this for initialization
 	void Start () {
@@ -33,12 +44,13 @@ public class HunterController : MonoBehaviour {
         m_LastTriggerAxis = trigger;
         if (wiggleR)
         {
-            PigWiggleSlider.instance.AddWiggle(PigGripPower * Time.deltaTime);
+
+            PigWiggleSlider.instance.AddWiggle(PigGripPower );
         }
         if (wiggleL)
         {
 
-            PigWiggleSlider.instance.AddWiggle(-PigGripPower * Time.deltaTime);
+            PigWiggleSlider.instance.AddWiggle(-PigGripPower );
         }
     }
 
@@ -67,14 +79,24 @@ public class HunterController : MonoBehaviour {
         //if we are carrying the pig, and collide witht he Pentagram!
         if (col.gameObject.tag == "Pentagram" && m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Carry"))
         {
-            Debug.Log("Sacrifice Accepted!");
-            //make the rigidbody non-kinematic
-            pigTransform.gameObject.GetComponent<Rigidbody>().isKinematic = false;
-            pigTransform.GetComponent<BoxCollider>().isTrigger = false;  // turn the collider back on
-            //parent the piggy to our right hand.
-            pigTransform.SetParent(null);
-            //start the carry animation
-            m_Animator.SetBool("Carry", false);
+            ReleasePig();
+            
         }
+    }
+
+
+    public void ReleasePig()
+    {
+        Debug.Log("Sacrifice Accepted!");
+        //make the rigidbody non-kinematic
+        pigTransform.gameObject.GetComponent<Rigidbody>().isKinematic = false;
+        pigTransform.GetComponent<BoxCollider>().isTrigger = false;  // turn the collider back on
+        //parent the piggy to our right hand.
+        pigTransform.SetParent(null);
+        //start the carry animation
+        m_Animator.SetBool("Carry", false);
+
+        //move the pig wiggle slider back
+        PigWiggleSlider.instance.tween.MoveBack();
     }
 }
