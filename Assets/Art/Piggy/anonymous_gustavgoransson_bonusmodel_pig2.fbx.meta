@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 69d7cb16196f2604f858a613980c0afb
-timeCreated: 1454182235
+timeCreated: 1454201287
 licenseType: Free
 ModelImporter:
   serializedVersion: 19
@@ -92,9 +92,11 @@ ModelImporter:
     4300000: GRIS
     7400000: SpiderPig|Dash.001
     7400002: SpiderPig|Idle
-    7400004: SpiderPig|Idle.001
-    7400006: SpiderPig|Dash
-    7400008: SpiderPig|Walk
+    7400004: SpiderPig|Dash
+    7400006: SpiderPig|Walk
+    7400008: SpiderPig|Wiggle
+    7400010: GRIS|Dash.001
+    7400012: GRIS|Wiggle
     9500000: //RootNode
     13700000: GRIS
   materials:
@@ -241,118 +243,6 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: GRIS
-        weight: 1
-      - path: SpiderPig
-        weight: 1
-      - path: SpiderPig/FrontIK.left
-        weight: 1
-      - path: SpiderPig/FrontIK.left/FrontIK.left_end
-        weight: 1
-      - path: SpiderPig/FrontIK.right
-        weight: 1
-      - path: SpiderPig/FrontIK.right/FrontIK.right_end
-        weight: 1
-      - path: SpiderPig/RearIK.left
-        weight: 1
-      - path: SpiderPig/RearIK.left/RearIK.left_end
-        weight: 1
-      - path: SpiderPig/RearIK.right
-        weight: 1
-      - path: SpiderPig/RearIK.right/RearIK.right_end
-        weight: 1
-      - path: SpiderPig/Root
-        weight: 1
-      - path: SpiderPig/Root/FrontUpper.left
-        weight: 1
-      - path: SpiderPig/Root/FrontUpper.left/FrontLower.left
-        weight: 1
-      - path: SpiderPig/Root/FrontUpper.left/FrontLower.left/FrontFoot.left
-        weight: 1
-      - path: SpiderPig/Root/FrontUpper.left/FrontLower.left/FrontFoot.left/FrontFoot.left_end
-        weight: 1
-      - path: SpiderPig/Root/FrontUpper.right
-        weight: 1
-      - path: SpiderPig/Root/FrontUpper.right/FrontLower.right
-        weight: 1
-      - path: SpiderPig/Root/FrontUpper.right/FrontLower.right/FrontFoot.right
-        weight: 1
-      - path: SpiderPig/Root/FrontUpper.right/FrontLower.right/FrontFoot.right/FrontFoot.right_end
-        weight: 1
-      - path: SpiderPig/Root/RearUpper.left
-        weight: 1
-      - path: SpiderPig/Root/RearUpper.left/RearLower.left
-        weight: 1
-      - path: SpiderPig/Root/RearUpper.left/RearLower.left/RearFoot.left
-        weight: 1
-      - path: SpiderPig/Root/RearUpper.left/RearLower.left/RearFoot.left/RearFoot.left_end
-        weight: 1
-      - path: SpiderPig/Root/RearUpper.right
-        weight: 1
-      - path: SpiderPig/Root/RearUpper.right/RearLower.right
-        weight: 1
-      - path: SpiderPig/Root/RearUpper.right/RearLower.right/RearFoot.right
-        weight: 1
-      - path: SpiderPig/Root/RearUpper.right/RearLower.right/RearFoot.right/RearFoot.right_end
-        weight: 1
-      - path: SpiderPig/Root/Spine
-        weight: 1
-      - path: SpiderPig/Root/Spine/Spine.001
-        weight: 1
-      - path: SpiderPig/Root/Spine/Spine.001/Spine.002
-        weight: 1
-      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck
-        weight: 1
-      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head
-        weight: 1
-      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.left
-        weight: 1
-      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.left/Ear2.left
-        weight: 1
-      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.left/Ear2.left/Ear2.left_end
-        weight: 1
-      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.right
-        weight: 1
-      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.right/Ear2.right
-        weight: 1
-      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.right/Ear2.right/Ear2.right_end
-        weight: 1
-      - path: SpiderPig/Root/Tail1
-        weight: 1
-      - path: SpiderPig/Root/Tail1/Tail2
-        weight: 1
-      - path: SpiderPig/Root/Tail1/Tail2/Tail2_end
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
-    - serializedVersion: 16
-      name: SpiderPig|Idle.001
-      takeName: SpiderPig|Idle.001
-      firstFrame: 0
-      lastFrame: 1
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
@@ -468,7 +358,7 @@ ModelImporter:
       loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
-      loopBlendPositionY: 1
+      loopBlendPositionY: 0
       loopBlendPositionXZ: 0
       keepOriginalOrientation: 0
       keepOriginalPositionY: 1
@@ -579,6 +469,342 @@ ModelImporter:
       hasAdditiveReferencePose: 0
       loopTime: 1
       loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: GRIS
+        weight: 1
+      - path: SpiderPig
+        weight: 1
+      - path: SpiderPig/FrontIK.left
+        weight: 1
+      - path: SpiderPig/FrontIK.left/FrontIK.left_end
+        weight: 1
+      - path: SpiderPig/FrontIK.right
+        weight: 1
+      - path: SpiderPig/FrontIK.right/FrontIK.right_end
+        weight: 1
+      - path: SpiderPig/RearIK.left
+        weight: 1
+      - path: SpiderPig/RearIK.left/RearIK.left_end
+        weight: 1
+      - path: SpiderPig/RearIK.right
+        weight: 1
+      - path: SpiderPig/RearIK.right/RearIK.right_end
+        weight: 1
+      - path: SpiderPig/Root
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.left
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.left/FrontLower.left
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.left/FrontLower.left/FrontFoot.left
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.left/FrontLower.left/FrontFoot.left/FrontFoot.left_end
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.right
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.right/FrontLower.right
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.right/FrontLower.right/FrontFoot.right
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.right/FrontLower.right/FrontFoot.right/FrontFoot.right_end
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.left
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.left/RearLower.left
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.left/RearLower.left/RearFoot.left
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.left/RearLower.left/RearFoot.left/RearFoot.left_end
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.right
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.right/RearLower.right
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.right/RearLower.right/RearFoot.right
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.right/RearLower.right/RearFoot.right/RearFoot.right_end
+        weight: 1
+      - path: SpiderPig/Root/Spine
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.left
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.left/Ear2.left
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.left/Ear2.left/Ear2.left_end
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.right
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.right/Ear2.right
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.right/Ear2.right/Ear2.right_end
+        weight: 1
+      - path: SpiderPig/Root/Tail1
+        weight: 1
+      - path: SpiderPig/Root/Tail1/Tail2
+        weight: 1
+      - path: SpiderPig/Root/Tail1/Tail2/Tail2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: SpiderPig|Wiggle
+      takeName: SpiderPig|Wiggle
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: GRIS
+        weight: 1
+      - path: SpiderPig
+        weight: 1
+      - path: SpiderPig/FrontIK.left
+        weight: 1
+      - path: SpiderPig/FrontIK.left/FrontIK.left_end
+        weight: 1
+      - path: SpiderPig/FrontIK.right
+        weight: 1
+      - path: SpiderPig/FrontIK.right/FrontIK.right_end
+        weight: 1
+      - path: SpiderPig/RearIK.left
+        weight: 1
+      - path: SpiderPig/RearIK.left/RearIK.left_end
+        weight: 1
+      - path: SpiderPig/RearIK.right
+        weight: 1
+      - path: SpiderPig/RearIK.right/RearIK.right_end
+        weight: 1
+      - path: SpiderPig/Root
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.left
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.left/FrontLower.left
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.left/FrontLower.left/FrontFoot.left
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.left/FrontLower.left/FrontFoot.left/FrontFoot.left_end
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.right
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.right/FrontLower.right
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.right/FrontLower.right/FrontFoot.right
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.right/FrontLower.right/FrontFoot.right/FrontFoot.right_end
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.left
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.left/RearLower.left
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.left/RearLower.left/RearFoot.left
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.left/RearLower.left/RearFoot.left/RearFoot.left_end
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.right
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.right/RearLower.right
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.right/RearLower.right/RearFoot.right
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.right/RearLower.right/RearFoot.right/RearFoot.right_end
+        weight: 1
+      - path: SpiderPig/Root/Spine
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.left
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.left/Ear2.left
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.left/Ear2.left/Ear2.left_end
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.right
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.right/Ear2.right
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.right/Ear2.right/Ear2.right_end
+        weight: 1
+      - path: SpiderPig/Root/Tail1
+        weight: 1
+      - path: SpiderPig/Root/Tail1/Tail2
+        weight: 1
+      - path: SpiderPig/Root/Tail1/Tail2/Tail2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: GRIS|Dash.001
+      takeName: GRIS|Dash.001
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: GRIS
+        weight: 1
+      - path: SpiderPig
+        weight: 1
+      - path: SpiderPig/FrontIK.left
+        weight: 1
+      - path: SpiderPig/FrontIK.left/FrontIK.left_end
+        weight: 1
+      - path: SpiderPig/FrontIK.right
+        weight: 1
+      - path: SpiderPig/FrontIK.right/FrontIK.right_end
+        weight: 1
+      - path: SpiderPig/RearIK.left
+        weight: 1
+      - path: SpiderPig/RearIK.left/RearIK.left_end
+        weight: 1
+      - path: SpiderPig/RearIK.right
+        weight: 1
+      - path: SpiderPig/RearIK.right/RearIK.right_end
+        weight: 1
+      - path: SpiderPig/Root
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.left
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.left/FrontLower.left
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.left/FrontLower.left/FrontFoot.left
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.left/FrontLower.left/FrontFoot.left/FrontFoot.left_end
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.right
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.right/FrontLower.right
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.right/FrontLower.right/FrontFoot.right
+        weight: 1
+      - path: SpiderPig/Root/FrontUpper.right/FrontLower.right/FrontFoot.right/FrontFoot.right_end
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.left
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.left/RearLower.left
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.left/RearLower.left/RearFoot.left
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.left/RearLower.left/RearFoot.left/RearFoot.left_end
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.right
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.right/RearLower.right
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.right/RearLower.right/RearFoot.right
+        weight: 1
+      - path: SpiderPig/Root/RearUpper.right/RearLower.right/RearFoot.right/RearFoot.right_end
+        weight: 1
+      - path: SpiderPig/Root/Spine
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.left
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.left/Ear2.left
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.left/Ear2.left/Ear2.left_end
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.right
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.right/Ear2.right
+        weight: 1
+      - path: SpiderPig/Root/Spine/Spine.001/Spine.002/Neck/Head/Ear1.right/Ear2.right/Ear2.right_end
+        weight: 1
+      - path: SpiderPig/Root/Tail1
+        weight: 1
+      - path: SpiderPig/Root/Tail1/Tail2
+        weight: 1
+      - path: SpiderPig/Root/Tail1/Tail2/Tail2_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: GRIS|Wiggle
+      takeName: GRIS|Wiggle
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
       loopBlendPositionXZ: 0
