@@ -13,6 +13,7 @@ public class HunterController : MonoBehaviour {
     public Transform pigCarryPoint;
     public float pickupTime;
     public List<AudioClip> grunts;
+    public List<AudioClip> quotes;
 
     private Animator m_Animator;
     private bool m_Dive = false;
@@ -56,7 +57,6 @@ public class HunterController : MonoBehaviour {
         if (m_Dive)
         {
             int clipIndex = Random.Range(0,grunts.Count-1);
-            Debug.Log("ClipIndex " + clipIndex);
             AudioManager.instance.PlayClip(grunts[clipIndex]);
             m_Animator.SetTrigger("Dive");
            // Debug.Log("Diving for dat piggy");
@@ -70,7 +70,9 @@ public class HunterController : MonoBehaviour {
         float trigger = Input.GetAxis("HunterWiggle");
         //Debug.Log(string.Format("Trigger: {0}", Input.GetAxis("HunterWiggle")));
         bool wiggleR = Input.GetKeyDown(KeyCode.E) || (trigger > 0.5f && !(m_LastTriggerAxis > 0.5f));
-        bool wiggleL = Input.GetKeyDown(KeyCode.Q) || (trigger < -0.5f && !(m_LastTriggerAxis < -0.5f)); 
+        bool wiggleL = Input.GetKeyDown(KeyCode.Q) || (trigger < -0.5f && !(m_LastTriggerAxis < -0.5f));
+        bool emote = Input.GetButtonDown("Emote");
+
         m_LastTriggerAxis = trigger;
         if (wiggleR)
         {
@@ -87,6 +89,12 @@ public class HunterController : MonoBehaviour {
         {
             m_Dive = Input.GetButtonDown("HunterDive");
 
+        }
+
+        if(emote)
+        {
+            int clipIndex = Random.Range(0, quotes.Count - 1);
+            AudioManager.instance.PlayClip(quotes[clipIndex]);
         }
 
     }
