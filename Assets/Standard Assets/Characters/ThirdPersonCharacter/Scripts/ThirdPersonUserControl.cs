@@ -56,7 +56,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // read inputs
             float h = CrossPlatformInputManager.GetAxis("HunterHorizontal");
             float v = CrossPlatformInputManager.GetAxis("HunterVertical");
-            Debug.Log("Input:(" + h + "," + v + ")");
+            //Debug.Log("Input:(" + h + "," + v + ")");
             bool crouch = Input.GetKey(KeyCode.C);
 
             //dive!
