@@ -9,10 +9,15 @@ public class HunterController : MonoBehaviour {
 
     public static HunterController instance;
     public float PigGripPower = .1f;
-    private Animator m_Animator;
-    protected float m_LastTriggerAxis = 0f;
-    private Transform pigTransform; // a reference to the pig, after you've grabbed it
     public Transform pigCarryPoint;
+    public float pickupTime;
+
+    private Animator m_Animator;
+    private Transform pigTransform; // a reference to the pig, after you've grabbed it
+    private float pickupTimer = 0;
+    
+
+    protected float m_LastTriggerAxis = 0f;
 
 
     //singleton logic
@@ -34,6 +39,14 @@ public class HunterController : MonoBehaviour {
 	void Update () {
         HandleInput();
 	}
+
+    void FixedUpdate()
+    {
+        if (!GameController.instance.m_PigCaptured)
+        {
+            pickupTimer -= Time.fixedDeltaTime;
+        }
+    }
 
     void HandleInput()
     {
@@ -59,7 +72,7 @@ public class HunterController : MonoBehaviour {
     private void OnTriggerEnter(Collider col)
     {
         //if we are diving, and collided with the piggy
-        if (col.gameObject.tag == "Piggy" && m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Dive"))
+        if (col.gameObject.tag == "Piggy"  && pickupTimer < 0)
         {
             GrabPig(col);
 
@@ -77,6 +90,7 @@ public class HunterController : MonoBehaviour {
     private void GrabPig(Collider col)
     {
         Debug.Log("Grabbed Piggy!");
+        pickupTimer = pickupTime; //reset the pickup timer
 
         GameController.instance.SetPigCaptured(true);
         //parent the piggy to our right hand.
@@ -86,6 +100,7 @@ public class HunterController : MonoBehaviour {
         col.isTrigger = true;  // make the collider a trigger
 
         col.transform.position = pigCarryPoint.position;
+        col.transform.rotation = pigCarryPoint.rotation;
         col.transform.SetParent(pigCarryPoint);
         //start the carry animation
         m_Animator.SetBool("Carry", true);
@@ -100,6 +115,7 @@ public class HunterController : MonoBehaviour {
     {
         //end the wiggle animation
         ThirdPersonPig.instance.SetWiggle(false);
+        GameController.instance.SetPigCaptured(false);
 
         //make the rigidbody non-kinematic
         pigTransform.gameObject.GetComponent<Rigidbody>().isKinematic = false;
