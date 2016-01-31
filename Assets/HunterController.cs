@@ -86,7 +86,7 @@ public class HunterController : MonoBehaviour {
         {
             ReleasePig();
             Pentagram.instance.AcceptSacrifice(GameController.instance.pig);
-            ThirdPersonPig.instance.enabled = false; //disable piggy controls
+           // ThirdPersonPig.instance.enabled = false; //disable piggy controls
         }
     }
 

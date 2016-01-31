@@ -1,0 +1,97 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Example_06c Randomize Displace Direction On
+  m_Shader: {fileID: 4800000, guid: 8a64e46191b76fc4785a99a27277d7df, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 5
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  m_SavedProperties:
+    serializedVersion: 2
+    m_TexEnvs:
+      data:
+        first:
+          name: _MainTex
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+      data:
+        first:
+          name: V_FR_FragTexture
+        second:
+          m_Texture: {fileID: 0}
+          m_Scale: {x: 1, y: 1}
+          m_Offset: {x: 0, y: 0}
+    m_Floats:
+      data:
+        first:
+          name: V_FR_Fragmentum
+        second: 1
+      data:
+        first:
+          name: V_FR_DisplaceAmount
+        second: 0.5
+      data:
+        first:
+          name: V_FR_RotateSpeed
+        second: 1
+      data:
+        first:
+          name: V_FR_FragmentsScale
+        second: 1
+      data:
+        first:
+          name: V_FR_DistanceToActivator
+        second: 0
+      data:
+        first:
+          name: V_FR_FragTexturePower
+        second: 1
+      data:
+        first:
+          name: V_FR_RandomizeFragmentum
+        second: 6
+      data:
+        first:
+          name: V_FR_RandomizeFragmentsScale
+        second: 0
+      data:
+        first:
+          name: V_FR_RandomizeDistanceToActivator
+        second: 0
+      data:
+        first:
+          name: V_FR_RandomizeInitialRotation
+        second: 0
+      data:
+        first:
+          name: V_FR_RandomizeRotationSpeed
+        second: 0
+      data:
+        first:
+          name: V_FR_RandomizeRotationTimeOffset
+        second: 0
+      data:
+        first:
+          name: V_FR_RandomizeDisplaceDirection
+        second: 1
+      data:
+        first:
+          name: V_FR_RandomizeDisplaceAmount
+        second: 2
+    m_Colors:
+      data:
+        first:
+          name: _Color
+        second: {r: 1, g: 1, b: 1, a: 1}
+      data:
+        first:
+          name: V_FR_DisplaceDirectionObjectPosition
+        second: {r: 0, g: 1, b: 0, a: 0}

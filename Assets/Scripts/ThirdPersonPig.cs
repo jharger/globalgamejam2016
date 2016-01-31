@@ -1,5 +1,6 @@
 using UnityEngine;
 
+using VacuumShaders.Fragmentum;
 
 	[RequireComponent(typeof(Rigidbody))]
 	[RequireComponent(typeof(CapsuleCollider))]
@@ -16,6 +17,9 @@ using UnityEngine;
 		[SerializeField] float m_GroundCheckDistance = 0.1f;
 
         public static ThirdPersonPig instance;
+        public GameObject pigModel;
+        public GameObject fragModel;
+
 		Rigidbody m_Rigidbody;
 		Animator m_Animator;
 		bool m_IsGrounded;
@@ -228,6 +232,14 @@ using UnityEngine;
 				m_Rigidbody.velocity = v;
 			}
 		}
+
+        public void SwitchModels()
+        {
+
+            pigModel.SetActive(false);
+            fragModel.SetActive(true);
+  
+        }
 
 
 		void CheckGroundStatus()

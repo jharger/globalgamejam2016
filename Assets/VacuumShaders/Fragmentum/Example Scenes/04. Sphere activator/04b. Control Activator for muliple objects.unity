@@ -1,0 +1,2893 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+SceneSettings:
+  m_ObjectHideFlags: 0
+  m_PVSData: 
+  m_PVSObjectsArray: []
+  m_PVSPortalsArray: []
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 6
+  m_Fog: 1
+  m_FogColor: {r: 0.05882353, g: 0.11764706, b: 0.11764706, a: 1}
+  m_FogMode: 2
+  m_FogDensity: 0.4
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 6.82
+  m_AmbientSkyColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_AmbientEquatorColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_AmbientGroundColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+--- !u!157 &4
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 6
+  m_GIWorkflowMode: 1
+  m_LightmapsMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_TemporalCoherenceThreshold: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 1
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 3
+    m_Resolution: 1
+    m_BakeResolution: 50
+    m_TextureWidth: 1024
+    m_TextureHeight: 1024
+    m_AOMaxDistance: 1
+    m_Padding: 2
+    m_CompAOExponent: 0
+    m_LightmapParameters: {fileID: 0}
+    m_TextureCompression: 0
+    m_FinalGather: 0
+    m_FinalGatherRayCount: 1024
+    m_ReflectionCompression: 2
+  m_LightingDataAsset: {fileID: 0}
+  m_RuntimeCPUUsage: 25
+--- !u!196 &5
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    accuratePlacement: 0
+    minRegionArea: 2
+    cellSize: 0.16666666
+    manualCellSize: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &17520235
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 17520236}
+  - 132: {fileID: 17520237}
+  m_Layer: 0
+  m_Name: GUI Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &17520236
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 17520235}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0.3, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1229237218}
+  m_RootOrder: 1
+--- !u!132 &17520237
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 17520235}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Activator type is set to <color=#00c4cc>Sphere</color> inside Fagmentum
+    script for all objects.
+  m_Anchor: 1
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 0
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: e0ccce93638f1e7449aae80abe5749d2, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!1 &172502938
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 172502942}
+  - 33: {fileID: 172502941}
+  - 23: {fileID: 172502940}
+  - 114: {fileID: 172502939}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &172502939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 172502938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &172502940
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 172502938}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &172502941
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 172502938}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &172502942
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 172502938}
+  m_LocalRotation: {x: -0.54689264, y: 0.44822693, z: 0.44822788, w: 0.5468939}
+  m_LocalPosition: {x: 2.346676, y: -0.0000038594007, z: -0.80631334}
+  m_LocalScale: {x: 1.276744, y: 1.276744, z: 1.276744}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+--- !u!1 &245013635
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 245013639}
+  - 33: {fileID: 245013638}
+  - 64: {fileID: 245013637}
+  - 23: {fileID: 245013636}
+  m_Layer: 0
+  m_Name: Plane
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &245013636
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 245013635}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 10302, guid: 0000000000000000f000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!64 &245013637
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 245013635}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &245013638
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 245013635}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &245013639
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 245013635}
+  m_LocalRotation: {x: 0, y: 0.28836882, z: 0, w: 0.9575194}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+--- !u!1 &313881410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 313881414}
+  - 33: {fileID: 313881413}
+  - 23: {fileID: 313881412}
+  - 114: {fileID: 313881411}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &313881411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 313881410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &313881412
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 313881410}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &313881413
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 313881410}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &313881414
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 313881410}
+  m_LocalRotation: {x: -0.707106, y: 0, z: 0, w: 0.7071076}
+  m_LocalPosition: {x: -1.2618203, y: -0.0000008046627, z: -0.44467694}
+  m_LocalScale: {x: 1.374955, y: 1.374955, z: 1.374955}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+--- !u!1 &456878692
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 456878696}
+  - 33: {fileID: 456878695}
+  - 23: {fileID: 456878694}
+  - 114: {fileID: 456878693}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &456878693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 456878692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &456878694
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 456878692}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &456878695
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 456878692}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &456878696
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 456878692}
+  m_LocalRotation: {x: 0.21526384, y: -0.6735432, z: -0.67354465, w: -0.21526434}
+  m_LocalPosition: {x: -1.227011, y: -0.0000013262033, z: 0.6014936}
+  m_LocalScale: {x: 1.6368513, y: 1.6368513, z: 1.6368513}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+--- !u!1 &459315219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 459315223}
+  - 33: {fileID: 459315222}
+  - 23: {fileID: 459315221}
+  - 114: {fileID: 459315220}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &459315220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 459315219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &459315221
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 459315219}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &459315222
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 459315219}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &459315223
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 459315219}
+  m_LocalRotation: {x: -0.707106, y: 0, z: 0, w: 0.7071076}
+  m_LocalPosition: {x: 0.7670796, y: 0.0000061690807, z: -2.3525038}
+  m_LocalScale: {x: 1.6368513, y: 1.6368513, z: 1.6368513}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+--- !u!1 &472384949
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 472384950}
+  - 132: {fileID: 472384951}
+  m_Layer: 0
+  m_Name: GUI Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &472384950
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 472384949}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0.25, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1229237218}
+  m_RootOrder: 2
+--- !u!132 &472384951
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 472384949}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: '"Manager_04" script updates activator for all objects.'
+  m_Anchor: 1
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 0
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: e0ccce93638f1e7449aae80abe5749d2, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!1 &502385359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 502385363}
+  - 33: {fileID: 502385362}
+  - 23: {fileID: 502385361}
+  - 114: {fileID: 502385360}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &502385360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 502385359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &502385361
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 502385359}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &502385362
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 502385359}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &502385363
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 502385359}
+  m_LocalRotation: {x: 0.13280788, y: -0.69452214, z: -0.69452363, w: -0.13280816}
+  m_LocalPosition: {x: 0.46919775, y: -0.0000020054238, z: -1.0349038}
+  m_LocalScale: {x: 1.3674426, y: 1.3674426, z: 1.3674426}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+--- !u!1 &642219108
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 642219112}
+  - 33: {fileID: 642219111}
+  - 23: {fileID: 642219110}
+  - 114: {fileID: 642219109}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &642219109
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 642219108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &642219110
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 642219108}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &642219111
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 642219108}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &642219112
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 642219108}
+  m_LocalRotation: {x: -0.5223644, y: -0.47658622, z: -0.47658724, w: 0.52236557}
+  m_LocalPosition: {x: -0.6556164, y: -0.00000023205979, z: 0.33688453}
+  m_LocalScale: {x: 0.9030766, y: 0.9030766, z: 0.9030766}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+--- !u!1 &771628518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 771628519}
+  - 132: {fileID: 771628520}
+  m_Layer: 0
+  m_Name: GUI Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &771628519
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 771628518}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0.2, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1229237218}
+  m_RootOrder: 3
+--- !u!132 &771628520
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 771628518}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: <color=#00c4cc>Use Update Function</color> is disabled inside Fragmentum
+    script.
+  m_Anchor: 1
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 0
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: e0ccce93638f1e7449aae80abe5749d2, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!1 &781548670
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 781548674}
+  - 33: {fileID: 781548673}
+  - 23: {fileID: 781548672}
+  - 114: {fileID: 781548671}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &781548671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 781548670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &781548672
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 781548670}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &781548673
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 781548670}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &781548674
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 781548670}
+  m_LocalRotation: {x: -0.707106, y: 0, z: 0, w: 0.7071076}
+  m_LocalPosition: {x: -0.69454193, y: -0.0000041276217, z: 1.4241347}
+  m_LocalScale: {x: 0.9166367, y: 0.9166367, z: 0.9166367}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+--- !u!1 &791702313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 791702317}
+  - 33: {fileID: 791702316}
+  - 23: {fileID: 791702315}
+  - 114: {fileID: 791702314}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &791702314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 791702313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &791702315
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 791702313}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &791702316
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 791702313}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &791702317
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 791702313}
+  m_LocalRotation: {x: -0.5223644, y: -0.47658622, z: -0.47658724, w: 0.52236557}
+  m_LocalPosition: {x: 0.43969846, y: -0.00000035648878, z: 0.19054985}
+  m_LocalScale: {x: 0.9030766, y: 0.9030766, z: 0.9030766}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+--- !u!1 &793512010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 793512014}
+  - 33: {fileID: 793512013}
+  - 23: {fileID: 793512012}
+  - 114: {fileID: 793512011}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &793512011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 793512010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &793512012
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 793512010}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &793512013
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 793512010}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &793512014
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 793512010}
+  m_LocalRotation: {x: -0.5223644, y: -0.47658622, z: -0.47658724, w: 0.52236557}
+  m_LocalPosition: {x: -2.1892729, y: -0.0000016545737, z: -1.094701}
+  m_LocalScale: {x: 0.9030766, y: 0.9030766, z: 0.9030766}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 14
+--- !u!1 &806159816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 806159818}
+  - 108: {fileID: 806159817}
+  m_Layer: 0
+  m_Name: Directional light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!108 &806159817
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 806159816}
+  m_Enabled: 1
+  serializedVersion: 6
+  m_Type: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 1.5
+  m_Range: 10
+  m_SpotAngle: 30
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 1
+    m_Resolution: 3
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 1
+  m_BounceIntensity: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
+  m_AreaSize: {x: 1, y: 1}
+--- !u!4 &806159818
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 806159816}
+  m_LocalRotation: {x: -0.78894717, y: 0.23666371, z: 0.32087195, w: -0.46754023}
+  m_LocalPosition: {x: 0, y: 2.3351111, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+--- !u!1 &933614829
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 933614833}
+  - 33: {fileID: 933614832}
+  - 23: {fileID: 933614831}
+  - 114: {fileID: 933614830}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &933614830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 933614829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &933614831
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 933614829}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &933614832
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 933614829}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &933614833
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 933614829}
+  m_LocalRotation: {x: -0.6842751, y: 0.17823175, z: 0.17823216, w: 0.6842765}
+  m_LocalPosition: {x: 2.087227, y: 0.0000025629997, z: -2.5576143}
+  m_LocalScale: {x: 2.4763055, y: 2.4763055, z: 2.4763055}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 15
+--- !u!1 &1015315378
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1015315382}
+  - 33: {fileID: 1015315381}
+  - 23: {fileID: 1015315380}
+  - 114: {fileID: 1015315379}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1015315379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1015315378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &1015315380
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1015315378}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1015315381
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1015315378}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &1015315382
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1015315378}
+  m_LocalRotation: {x: -0.707106, y: 0, z: 0, w: 0.7071076}
+  m_LocalPosition: {x: 1.2129636, y: 0.000002592802, z: -0.576983}
+  m_LocalScale: {x: 0.8241501, y: 0.8241501, z: 0.8241501}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 16
+--- !u!1 &1033609544
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1033609546}
+  - 114: {fileID: 1033609545}
+  m_Layer: 0
+  m_Name: Manager_04
+  m_TagString: Untagged
+  m_Icon: {fileID: -1203168336, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1033609545
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1033609544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6bf28902406c7834b82db6326130d6de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activator: {fileID: 1905931508}
+  radius: 1
+  fragmentumObjects: []
+--- !u!4 &1033609546
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1033609544}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.5357666, y: 1.0198176, z: 2.1701005}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+--- !u!1 &1103956314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1103956318}
+  - 33: {fileID: 1103956317}
+  - 23: {fileID: 1103956316}
+  - 114: {fileID: 1103956315}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1103956315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1103956314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &1103956316
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1103956314}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1103956317
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1103956314}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &1103956318
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1103956314}
+  m_LocalRotation: {x: -0.13500312, y: -0.6940988, z: -0.6941002, w: 0.13500357}
+  m_LocalPosition: {x: -1.0492022, y: -0.000004691962, z: 0.9883426}
+  m_LocalScale: {x: 0.9030766, y: 0.9030766, z: 0.9030766}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+--- !u!1 &1229237217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1229237218}
+  m_Layer: 0
+  m_Name: Info
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1229237218
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1229237217}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.54376256, z: 0.0000012814999}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1912403752}
+  - {fileID: 17520236}
+  - {fileID: 472384950}
+  - {fileID: 771628519}
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+--- !u!1 &1233461727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1233461731}
+  - 33: {fileID: 1233461730}
+  - 23: {fileID: 1233461729}
+  - 114: {fileID: 1233461728}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1233461728
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1233461727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &1233461729
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1233461727}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1233461730
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1233461727}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &1233461731
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1233461727}
+  m_LocalRotation: {x: -0.1942472, y: -0.6799022, z: -0.6799036, w: 0.19424775}
+  m_LocalPosition: {x: 1.3253655, y: 0.0000036063682, z: -1.2565043}
+  m_LocalScale: {x: 1.6368512, y: 1.6368513, z: 1.6368513}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+--- !u!1 &1424641462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1424641466}
+  - 33: {fileID: 1424641465}
+  - 23: {fileID: 1424641464}
+  - 114: {fileID: 1424641463}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1424641463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1424641462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &1424641464
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1424641462}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1424641465
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1424641462}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &1424641466
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1424641462}
+  m_LocalRotation: {x: -0.5392727, y: 0.45736626, z: 0.45736712, w: 0.5392739}
+  m_LocalPosition: {x: -2.7123914, y: 0.0000021271542, z: -0.8509657}
+  m_LocalScale: {x: 3.2252576, y: 3.2252576, z: 3.2252576}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+--- !u!1 &1425570518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1425570522}
+  - 33: {fileID: 1425570521}
+  - 23: {fileID: 1425570520}
+  - 114: {fileID: 1425570519}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1425570519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1425570518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &1425570520
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1425570518}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1425570521
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1425570518}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &1425570522
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1425570518}
+  m_LocalRotation: {x: -0.6215918, y: -0.33707944, z: -0.33708015, w: 0.62159324}
+  m_LocalPosition: {x: -3.1963096, y: 0.0000021457672, z: 0.44784874}
+  m_LocalScale: {x: 1.6368513, y: 1.6368513, z: 1.6368513}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+--- !u!1 &1544339280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1544339285}
+  - 20: {fileID: 1544339284}
+  - 92: {fileID: 1544339283}
+  - 124: {fileID: 1544339282}
+  - 81: {fileID: 1544339281}
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!81 &1544339281
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1544339280}
+  m_Enabled: 1
+--- !u!124 &1544339282
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1544339280}
+  m_Enabled: 1
+--- !u!92 &1544339283
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1544339280}
+  m_Enabled: 1
+--- !u!20 &1544339284
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1544339280}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.05882353, g: 0.11764706, b: 0.11764706, a: 0.019607844}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 0
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+  m_StereoMirrorMode: 0
+--- !u!4 &1544339285
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1544339280}
+  m_LocalRotation: {x: 0.013041612, y: -0.9596458, z: 0.047442775, w: 0.27687377}
+  m_LocalPosition: {x: 1.4113795, y: 1.0198176, z: 2.1173406}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+--- !u!1 &1574566751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1574566755}
+  - 33: {fileID: 1574566754}
+  - 23: {fileID: 1574566753}
+  - 114: {fileID: 1574566752}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1574566752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1574566751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &1574566753
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1574566751}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1574566754
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1574566751}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &1574566755
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1574566751}
+  m_LocalRotation: {x: -0.707106, y: 0, z: 0, w: 0.7071076}
+  m_LocalPosition: {x: -1.2124523, y: 0.0000030143813, z: -1.9442396}
+  m_LocalScale: {x: 1.9772624, y: 1.9772624, z: 1.9772624}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+--- !u!1 &1651338572
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1651338576}
+  - 33: {fileID: 1651338575}
+  - 23: {fileID: 1651338574}
+  - 114: {fileID: 1651338573}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1651338573
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1651338572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &1651338574
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1651338572}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1651338575
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1651338572}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &1651338576
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1651338572}
+  m_LocalRotation: {x: -0.3859091, y: -0.5925142, z: -0.5925155, w: 0.38590997}
+  m_LocalPosition: {x: -0.05284953, y: -0.0000015290107, z: -2.462624}
+  m_LocalScale: {x: 1.0932553, y: 1.0932553, z: 1.0932553}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
+--- !u!1 &1682943173
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1682943177}
+  - 33: {fileID: 1682943176}
+  - 23: {fileID: 1682943175}
+  - 114: {fileID: 1682943174}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1682943174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1682943173}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &1682943175
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1682943173}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1682943176
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1682943173}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &1682943177
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1682943173}
+  m_LocalRotation: {x: -0.707106, y: 0, z: 0, w: 0.7071076}
+  m_LocalPosition: {x: -3.0630698, y: 0.0000012627726, z: 0.0289042}
+  m_LocalScale: {x: 0.9030766, y: 0.9030766, z: 0.9030766}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 23
+--- !u!1 &1849941312
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1849941315}
+  - 33: {fileID: 1849941314}
+  - 23: {fileID: 1849941313}
+  - 114: {fileID: 1849941316}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!23 &1849941313
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1849941312}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1849941314
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1849941312}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &1849941315
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1849941312}
+  m_LocalRotation: {x: -0.7070958, y: -0.0038054914, z: -0.00380559, w: 0.7070973}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.2636794, y: 1.2636794, z: 1.2636794}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 24
+--- !u!114 &1849941316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1849941312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!1 &1872291518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1872291522}
+  - 33: {fileID: 1872291521}
+  - 23: {fileID: 1872291520}
+  - 114: {fileID: 1872291519}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1872291519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1872291518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &1872291520
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1872291518}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &1872291521
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1872291518}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &1872291522
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1872291518}
+  m_LocalRotation: {x: -0.49486732, y: -0.50507945, z: -0.5050806, w: 0.49486846}
+  m_LocalPosition: {x: 1.7415018, y: 0.0000023373557, z: -1.1147363}
+  m_LocalScale: {x: 0.9030766, y: 0.9030766, z: 0.9030766}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 25
+--- !u!1 &1905931507
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1905931508}
+  - 114: {fileID: 1905931509}
+  m_Layer: 0
+  m_Name: Activator - Sphere
+  m_TagString: Untagged
+  m_Icon: {fileID: -2065832391, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1905931508
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1905931507}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.18853843, y: 0.37658304, z: -0.59322894}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &1905931509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1905931507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1587965815, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1912403750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 1912403752}
+  - 132: {fileID: 1912403751}
+  m_Layer: 0
+  m_Name: GUI Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!132 &1912403751
+GUIText:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1912403750}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Text: Control Activator for muliple objects.
+  m_Anchor: 1
+  m_Alignment: 1
+  m_PixelOffset: {x: 0, y: 0}
+  m_LineSpacing: 1
+  m_TabSize: 4
+  m_Font: {fileID: 12800000, guid: e0ccce93638f1e7449aae80abe5749d2, type: 3}
+  m_Material: {fileID: 0}
+  m_FontSize: 0
+  m_FontStyle: 0
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_PixelCorrect: 1
+  m_RichText: 1
+--- !u!4 &1912403752
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1912403750}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 0.4, z: -0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1229237218}
+  m_RootOrder: 0
+--- !u!1 &2021397301
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2021397305}
+  - 33: {fileID: 2021397304}
+  - 23: {fileID: 2021397303}
+  - 114: {fileID: 2021397302}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2021397302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2021397301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &2021397303
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2021397301}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &2021397304
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2021397301}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &2021397305
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2021397301}
+  m_LocalRotation: {x: -0.1597973, y: -0.6888133, z: -0.6888148, w: 0.15979765}
+  m_LocalPosition: {x: -0.31500363, y: 0.0000017732382, z: -3.155936}
+  m_LocalScale: {x: 2.2156172, y: 2.2156172, z: 2.2156172}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 26
+--- !u!1 &2096082606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2096082610}
+  - 33: {fileID: 2096082609}
+  - 23: {fileID: 2096082608}
+  - 114: {fileID: 2096082607}
+  m_Layer: 0
+  m_Name: Teapot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2096082607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096082606}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -8745043, guid: ce644941dd2ebe84aad1a8895d913b83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bGloblaControl: 0
+  bFragmentsScale: 0
+  activatorType: 2
+  rotateType: 0
+  bRotateAfterDisplace: 0
+  dispalceType: 0
+  bLockDisplace: 0
+  bRandomizeFragmentum: 0
+  bRandomizeDisplaceAmount: 0
+  bRandomizeScale: 0
+  bRandomizeDisplaceDirection: 0
+  bRandomizeInitialRotation: 0
+  bRandomizecRotationSpeed: 0
+  bRandomizecRotationTimeOffset: 0
+  bRandomizeDistanceToActivator: 0
+  bIsDoubleSided: 1
+  calcLightPerVertex: 0
+  bHasMainColor: 0
+  bHasReflectionColor: 0
+  bHasTexturePow: 0
+  activatorPlaneObject: {fileID: 1905931508}
+  activatorSphereObject: {fileID: 0}
+  activatorSphereObjectRadius: 1
+  displaceDirectionalObject: {fileID: 0}
+  bUseDirectionalObject: 0
+  rotatePointObject: {fileID: 0}
+  error: 0
+  materialTag: 
+  useUpdateFunction: 0
+--- !u!23 &2096082608
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096082606}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_Materials:
+  - {fileID: 2100000, guid: f51623947b2299841a49272d2ec92e34, type: 2}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 1
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+--- !u!33 &2096082609
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096082606}
+  m_Mesh: {fileID: 4300000, guid: c54ebbe3d7b755940b18640da3196089, type: 3}
+--- !u!4 &2096082610
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2096082606}
+  m_LocalRotation: {x: -0.5223644, y: -0.47658622, z: -0.47658724, w: 0.52236557}
+  m_LocalPosition: {x: 1.951328, y: 0.000004941413, z: -2.0000901}
+  m_LocalScale: {x: 0.9030766, y: 0.9030766, z: 0.9030766}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 27

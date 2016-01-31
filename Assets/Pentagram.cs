@@ -1,5 +1,27 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 using System.Collections;
+using System.Collections.Generic;
+
+
+//Unity OnChange float event
+[System.Serializable]
+public class FloatEvent : UnityEvent<float>
+{
+};
+
+//custom class for onChange event, and min/max value
+[System.Serializable]
+public class AnimationFloat
+{
+    public string name;
+    public FloatEvent parameter; // hook in a public float variable here
+    public AnimationCurve animCurve;
+    //it will be changed between these min/max values with the audio frequency.
+    public float minValue = 0;
+    public float maxValue = 1;
+    public float animationTime;
+}
 
 public class Pentagram : MonoBehaviour {
 
@@ -9,8 +31,11 @@ public class Pentagram : MonoBehaviour {
 
     public float moveSpeed;
     public float spinSpeed;
+    public float dissapearSpeed;
     public Transform centerPoint; //center of the pentagram
     public Transform risePoint;
+    public GameObject HellFire;
+    public List<AnimationFloat> animations;
 
     void OnEnable()
     {
@@ -67,6 +92,7 @@ public class Pentagram : MonoBehaviour {
     IEnumerator Rise(GameObject sacrifice)
     {
         Debug.Log("Rising");
+        RunAnimation(animations[0]); //run the middle flame rise animation
         state = State.Rise;
         float distance = Vector3.Distance(sacrifice.transform.position, risePoint.position);
         float angle = 0;
@@ -82,16 +108,49 @@ public class Pentagram : MonoBehaviour {
             yield return null;
         }
 
+        RunAnimation(animations[1]); //run the middle flame fade animation
 
-        //TODO: move!
-        state = State.Dissapear;
+        StartCoroutine(Dissapear(sacrifice));
+       
         Debug.Log("Done Rising");
     }
 
     IEnumerator Dissapear(GameObject sacrifice)
     {
-        while (true)
+        HellFire.SetActive(true);
+        state = State.Dissapear;
+        ThirdPersonPig.instance.SwitchModels(); // switch to the frag material
+        Material pigSkin = ThirdPersonPig.instance.fragModel.GetComponent<SkinnedMeshRenderer>().material;
+        float influence = 0;
+        while (influence < .9)
         {
+            influence = Mathf.Lerp(influence, 1, dissapearSpeed * Time.deltaTime);
+            //set the influence
+            Debug.Log("Influence: " + influence);
+            pigSkin.SetFloat("V_FR_Fragmentum", influence);
+            yield return null;
+        }
+
+        Debug.Log("Done dissaperd");
+        HellFire.SetActive(false);
+
+    }
+
+    public void RunAnimation(AnimationFloat anim)
+    {
+        StartCoroutine(Run(anim));
+    }
+
+    IEnumerator Run(AnimationFloat anim)
+    {
+        float timer = 0;
+        float value = anim.minValue;
+        while (timer < anim.animationTime)
+        {
+            float percent = timer / anim.animationTime;
+            value = anim.minValue + (anim.maxValue - anim.minValue) * anim.animCurve.Evaluate(percent);
+            anim.parameter.Invoke(value);
+            timer += Time.deltaTime;
             yield return null;
         }
     }
