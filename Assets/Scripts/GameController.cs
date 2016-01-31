@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 
@@ -8,13 +9,12 @@ public class GameController : MonoBehaviour
     public static GameController instance;
     public GameObject pig;
     public GameObject hunter;
-    public float gameTime;
+    public Text timerText;
+    public double totalTime = 66.6;
+    private double goalTime = 0.0;
     public bool paused = false;
 
     public bool m_PigCaptured = false;
-
-
-
 
     //singleton logic;
     void OnEnable()
@@ -30,14 +30,23 @@ public class GameController : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        goalTime = Time.time + totalTime;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
+        double guiTime;
         if (!paused)
         {
-            gameTime -= Time.fixedDeltaTime;
+            guiTime = goalTime - Time.time;
+            guiTime = totalTime - guiTime;
+            guiTime = System.Math.Truncate(guiTime * 10) / 10;
+            if (guiTime > totalTime) paused = true;
+
+            string displayText;
+            displayText = (guiTime > totalTime) ? totalTime.ToString() : guiTime.ToString();
+            if (guiTime % 1 == 0) displayText = displayText + ".0"; 
+            timerText.text = displayText;
         }
     }
 
