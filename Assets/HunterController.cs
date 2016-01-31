@@ -30,8 +30,10 @@ public class HunterController : MonoBehaviour {
         instance = null;
     }
 
+
 	// Use this for initialization
 	void Start () {
+        GameController.instance.hunter = this.gameObject;
         m_Animator = this.GetComponent<Animator>();
 	}
 	
@@ -83,7 +85,8 @@ public class HunterController : MonoBehaviour {
         if (col.gameObject.tag == "Pentagram" && m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Carry"))
         {
             ReleasePig();
-            
+            Pentagram.instance.AcceptSacrifice(GameController.instance.pig);
+            ThirdPersonPig.instance.enabled = false; //disable piggy controls
         }
     }
 

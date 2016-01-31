@@ -6,6 +6,8 @@ public class GameController : MonoBehaviour
 {
 
     public static GameController instance;
+    public GameObject pig;
+    public GameObject hunter;
     public float gameTime;
     public bool paused = false;
 

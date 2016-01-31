@@ -12,10 +12,13 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
         private float m_LastTriggerAxis;
-        
+
+
+    
+
         private void Start()
         {
-
+            GameController.instance.pig = this.gameObject;
 
             // get the third person character ( this should never be null due to require component )
             m_Character = GetComponent<ThirdPersonPig>();
@@ -42,17 +45,17 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             bool wiggleR = (trigger > 0.5f && !(m_LastTriggerAxis > 0.5f));
             bool wiggleL = (trigger < -0.5f && !(m_LastTriggerAxis < -0.5f));
             m_LastTriggerAxis = trigger;
-            Debug.Log("PigWiggle: " + trigger);
+            //Debug.Log("PigWiggle: " + trigger);
 
 
             if (wiggleR)
             {
-                Debug.Log("WiggleR");
+               // Debug.Log("WiggleR");
                 PigWiggleSlider.instance.AddWiggle(m_pigWigglePower);
             }
             if (wiggleL)
             {
-                Debug.Log("WiggleL");
+                //Debug.Log("WiggleL");
                 PigWiggleSlider.instance.AddWiggle(-m_pigWigglePower);
             }
 
