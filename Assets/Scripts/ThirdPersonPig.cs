@@ -1,13 +1,13 @@
 using UnityEngine;
 
-using VacuumShaders.Fragmentum;
-
 	[RequireComponent(typeof(Rigidbody))]
 	[RequireComponent(typeof(CapsuleCollider))]
 	[RequireComponent(typeof(Animator))]
 	public class ThirdPersonPig: MonoBehaviour
-	{
-		[SerializeField] float m_MovingTurnSpeed = 360;
+    {
+        #region Members
+
+        [SerializeField] float m_MovingTurnSpeed = 360;
 		[SerializeField] float m_StationaryTurnSpeed = 180;
 		[SerializeField] float m_JumpPower = 12f;
 		[Range(1f, 4f)][SerializeField] float m_GravityMultiplier = 2f;
@@ -34,6 +34,9 @@ using VacuumShaders.Fragmentum;
 		CapsuleCollider m_Capsule;
 		bool m_Crouching;
 
+        #endregion
+
+        #region Singlton
         //singleton logic
         void OnEnable()
         {
@@ -44,7 +47,16 @@ using VacuumShaders.Fragmentum;
             instance = null;
         }
 
-		void Start()
+        #endregion
+
+        public bool isDashing { 
+            get 
+            {
+                return m_Animator.GetCurrentAnimatorStateInfo(0).IsName("Dash");
+            } 
+        }
+
+        void Start()
 		{
 			m_Animator = GetComponent<Animator>();
 			m_Rigidbody = GetComponent<Rigidbody>();
@@ -102,6 +114,7 @@ using VacuumShaders.Fragmentum;
                 m_Rigidbody.isKinematic = false;
             }
         }
+
 
 
 		void ScaleCapsuleForCrouching(bool crouch)

@@ -74,7 +74,7 @@ public class HunterController : MonoBehaviour {
     private void OnTriggerEnter(Collider col)
     {
         //if we are diving, and collided with the piggy
-        if (col.gameObject.tag == "Piggy"  && pickupTimer < 0)
+        if (col.gameObject.tag == "Piggy" && pickupTimer < 0 && !ThirdPersonPig.instance.isDashing)
         {
             GrabPig(col);
 
@@ -123,6 +123,9 @@ public class HunterController : MonoBehaviour {
         //make the rigidbody non-kinematic
         pigTransform.gameObject.GetComponent<Rigidbody>().isKinematic = false;
         pigTransform.GetComponent<CapsuleCollider>().isTrigger = false;  // turn the collider back on
+
+        pigTransform.rotation = this.transform.rotation;
+
         //parent the piggy to our right hand.
         pigTransform.SetParent(null);
         //start the carry animation
