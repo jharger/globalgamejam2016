@@ -61,6 +61,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			// control and velocity handling is different when grounded and airborne:
 			if (m_IsGrounded)
 			{
+                Debug.Log("Grounded");
 				HandleGroundedMovement(crouch, jump);
 			}
 			else
@@ -186,6 +187,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 		public void OnAnimatorMove()
 		{
+            Debug.Log("OnAnimatorMove");
 			// we implement this function to override the default root motion.
 			// this allows us to modify the positional speed before it's applied.
 			if (m_IsGrounded && Time.deltaTime > 0)
