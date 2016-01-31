@@ -14,15 +14,15 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         private Vector3 m_CamForward;             // The current forward direction of the camera
         private Vector3 m_Move;
         private bool m_Jump;                      // the world-relative desired move direction, calculated from the camForward and user input.
-        private bool m_Dive = false;
-        private Animator m_Animator;
+        
+
 
         private void Start()
         {
 
             // get the third person character ( this should never be null due to require component )
             m_Character = GetComponent<ThirdPersonCharacter>();
-            m_Animator = this.GetComponent<Animator>();
+           
         }
 
 
@@ -42,11 +42,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             {
                 m_Jump = CrossPlatformInputManager.GetButtonDown("HunterJump");
             }
-            if(!m_Dive)
-            {
-                m_Dive = Input.GetButtonDown("HunterDive");
-        
-            }
+     
         }
 
 
@@ -59,12 +55,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             //Debug.Log("Input:(" + h + "," + v + ")");
             bool crouch = Input.GetKey(KeyCode.C);
 
-            //dive!
-            if(m_Dive)
-            {
-                m_Animator.SetTrigger("Dive");
-                Debug.Log("Diving for dat piggy");
-            }
+   
 
             // calculate move direction to pass to character
             if (m_Cam != null)
@@ -86,7 +77,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // pass all parameters to the character control script
             m_Character.Move(m_Move, crouch, m_Jump);
             m_Jump = false;
-            m_Dive = false;
+           
         }
     }
 }

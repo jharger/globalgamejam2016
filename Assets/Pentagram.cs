@@ -35,7 +35,11 @@ public class Pentagram : MonoBehaviour {
     public Transform centerPoint; //center of the pentagram
     public Transform risePoint;
     public GameObject HellFire;
+    public AudioClip chant;
     public List<AnimationFloat> animations;
+
+    private AudioClip startClip;
+    private AudioSource audioSource;
 
     void OnEnable()
     {
@@ -48,7 +52,8 @@ public class Pentagram : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+        audioSource = this.GetComponent<AudioSource>();
+        startClip = audioSource.clip;
 	}
 	
 	// Update is called once per frame
@@ -58,6 +63,12 @@ public class Pentagram : MonoBehaviour {
 
     public void AcceptSacrifice(GameObject sacrifice)
     {
+
+        //start playin the chant clip
+        audioSource.Stop();
+        audioSource.clip = chant;
+        audioSource.Play();
+
         var rigidbody = sacrifice.GetComponent<Rigidbody>();
         if(rigidbody)
         {
@@ -133,6 +144,12 @@ public class Pentagram : MonoBehaviour {
 
         Debug.Log("Done dissaperd");
         HellFire.SetActive(false);
+
+
+        //stop playin the chant clip
+        audioSource.Stop();
+        audioSource.clip = startClip;
+        audioSource.Play();
 
     }
 
