@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 /// <summary>
 /// For some reason ThirdPersonUserController wasn't seeing any of our custom classes....
@@ -11,11 +12,15 @@ public class HunterController : MonoBehaviour {
     public float PigGripPower = .1f;
     public Transform pigCarryPoint;
     public float pickupTime;
+    public AudioClip pigSqueal;
+    public List<AudioClip> grunts;
+    public List<AudioClip> quotes;
 
     private Animator m_Animator;
+    private bool m_Dive = false;
     private Transform pigTransform; // a reference to the pig, after you've grabbed it
     private float pickupTimer = 0;
-    
+
 
     protected float m_LastTriggerAxis = 0f;
 
@@ -48,6 +53,17 @@ public class HunterController : MonoBehaviour {
         {
             pickupTimer -= Time.fixedDeltaTime;
         }
+
+        //dive!
+        if (m_Dive)
+        {
+            int clipIndex = Random.Range(0,grunts.Count-1);
+            AudioManager.instance.PlayClip(grunts[clipIndex]);
+            m_Animator.SetTrigger("Dive");
+           // Debug.Log("Diving for dat piggy");
+        }
+
+        m_Dive = false;
     }
 
     void HandleInput()
@@ -55,7 +71,9 @@ public class HunterController : MonoBehaviour {
         float trigger = Input.GetAxis("HunterWiggle");
         //Debug.Log(string.Format("Trigger: {0}", Input.GetAxis("HunterWiggle")));
         bool wiggleR = Input.GetKeyDown(KeyCode.E) || (trigger > 0.5f && !(m_LastTriggerAxis > 0.5f));
-        bool wiggleL = Input.GetKeyDown(KeyCode.Q) || (trigger < -0.5f && !(m_LastTriggerAxis < -0.5f)); 
+        bool wiggleL = Input.GetKeyDown(KeyCode.Q) || (trigger < -0.5f && !(m_LastTriggerAxis < -0.5f));
+        bool emote = Input.GetButtonDown("Emote");
+
         m_LastTriggerAxis = trigger;
         if (wiggleR)
         {
@@ -67,6 +85,19 @@ public class HunterController : MonoBehaviour {
 
             PigWiggleSlider.instance.AddWiggle(-PigGripPower );
         }
+
+        if (!m_Dive)
+        {
+            m_Dive = Input.GetButtonDown("HunterDive");
+
+        }
+
+        if(emote)
+        {
+            int clipIndex = Random.Range(0, quotes.Count - 1);
+            AudioManager.instance.PlayClip(quotes[clipIndex]);
+        }
+
     }
 
     //we have 2 piggyGrabTriggers attached to the hands of our hunter.
@@ -93,6 +124,10 @@ public class HunterController : MonoBehaviour {
     private void GrabPig(Collider col)
     {
         Debug.Log("Grabbed Piggy!");
+
+        //play the audio clilp
+        AudioManager.instance.PlayClip(pigSqueal);
+
         pickupTimer = pickupTime; //reset the pickup timer
 
         GameController.instance.SetPigCaptured(true);

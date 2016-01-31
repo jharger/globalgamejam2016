@@ -7,10 +7,10 @@ Material:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: umvest_25655
-  m_Shader: {fileID: 4800000, guid: daa07ac91d0cc44f38a7250d8bc72121, type: 3}
+  m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _DETAIL_MULX2 _METALLICGLOSSMAP _NORMALMAP _SPECGLOSSMAP
   m_LightmapFlags: 5
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2000
   stringTagMap: {}
   m_SavedProperties:
     serializedVersion: 2
@@ -45,14 +45,14 @@ Material:
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _ParallaxMap
+          name: _EmissionMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
       data:
         first:
-          name: _EmissionMap
+          name: _ParallaxMap
         second:
           m_Texture: {fileID: 0}
           m_Scale: {x: 1, y: 1}
@@ -176,13 +176,13 @@ Material:
         second: {r: 1, g: 1, b: 1, a: 1}
       data:
         first:
-          name: _ColorTint
-        second: {r: 1, g: 0.6, b: 0.6, a: 1}
-      data:
-        first:
           name: _SmoothnessTweaks
         second: {r: 0.47, g: 0.03, b: 0, a: 0}
       data:
         first:
           name: _SpecularMapColorTweak
         second: {r: 0.19117647, g: 0.19117647, b: 0.19117647, a: 1}
+      data:
+        first:
+          name: _ColorTint
+        second: {r: 1, g: 0.6, b: 0.6, a: 1}

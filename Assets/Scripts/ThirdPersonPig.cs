@@ -1,10 +1,14 @@
 using UnityEngine;
+using System.Collections.Generic;
 
 	[RequireComponent(typeof(Rigidbody))]
 	[RequireComponent(typeof(CapsuleCollider))]
 	[RequireComponent(typeof(Animator))]
 	public class ThirdPersonPig: MonoBehaviour
     {
+
+        public AudioClip footSteps;
+        private AudioSource audioSource;
         #region Members
 
         [SerializeField] float m_MovingTurnSpeed = 360;
@@ -61,6 +65,8 @@ using UnityEngine;
 			m_Animator = GetComponent<Animator>();
 			m_Rigidbody = GetComponent<Rigidbody>();
 			m_Capsule = GetComponent<CapsuleCollider>();
+            audioSource = GetComponent<AudioSource>();
+            
 			m_CapsuleHeight = m_Capsule.height;
 			m_CapsuleCenter = m_Capsule.center;
 
@@ -82,6 +88,22 @@ using UnityEngine;
 			m_ForwardAmount = move.z;
 
 			ApplyExtraTurnRotation();
+
+            if (move.magnitude > .2f)
+            {
+                if (!audioSource.isPlaying)
+                {
+                    audioSource.clip = footSteps;
+                    audioSource.Play();
+                }
+            }
+            else
+            {
+                if (audioSource.isPlaying)
+                {
+                    audioSource.Stop();
+                }
+            }
 
 			// control and velocity handling is different when grounded and airborne:
 			if (m_IsGrounded)
